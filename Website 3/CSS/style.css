@@ -1,0 +1,424 @@
+:root {
+  --color1: #59544B;
+  --color2: #A27653;
+  --color3: #FBF8EE;
+  --colorhead: #9A0F0B;
+  --colortext: #423610;
+}
+html{
+  background: var(--color1);
+  background-image: url("../images/title.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  justify-content: center;
+  font-family: "Forum", "Lucida Console", sans-serif;
+}
+
+.filler_text{
+  color: var(--colortext);
+  font-size: 1vw;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+
+a{
+  color: var(--colorhead);
+  text-decoration: none;
+}
+.main{
+  box-shadow: inset 0 0 150px var(--color2);
+  margin-bottom: 0px;
+  width: 80%;
+  float: center;
+  background: var(--color2);
+  border-radius: 20px;
+  background-image: url("../images/paper-antique-seamless.jpg")
+}
+
+.logo{
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  height: 60px;
+}
+
+.nav{
+  position: sticky;
+  top: 0;
+  z-index: 10
+}
+
+.nav_list{
+  display: flex;
+  justify-content: center;
+  background-color: var(--color3);
+}
+
+.nav_list a{
+  width: 25%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_list a{
+  color: black;
+  font-size: 2vw;
+  text-decoration: none;
+}
+
+.nav_list .active{
+  background-color: black;
+}
+
+.nav_list .active div{
+  color: white;
+}
+
+.nav_list a:hover{
+  background-color: black;
+}
+
+.nav_list .inactive:hover div{
+  color: white;
+}
+
+.title_card{
+  margin-bottom: 60%;
+}
+.title_card img{
+  width: 100%;
+  height: 100%;
+}
+
+.title{
+  position: absolute;
+  left: 30%;
+  top: 300px;
+  color: white;
+  font-size: 6vw;
+  -webkit-text-stroke: 2px black;
+}
+
+.index_box{
+  font-size: 2vw
+}
+.index_box a{
+  text-decoration: none;
+}
+
+.index_box{
+	display: flex;
+  flex-direction: row;
+  background: var(--color3);
+  height: 10vw;
+  border-radius: 20px;
+  margin: 30px;
+  padding: 50px;
+}
+.index_box > div{
+  height: 100%;
+  width: 20%;
+}
+.rooms_title{
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+.index_spacer{
+  width: 10%;
+}
+.attraction_title{
+  text-align: left;
+}
+.rooms_img img, .attraction_img img{
+  width: 92%;
+  height: 92%;
+  border-radius: 20px;
+  border: 3px solid var(--color2);
+}
+.rooms_img img:hover, .attraction_img img:hover{
+  width: 97%;
+  height: 97%;
+}
+
+
+.rooms{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.rooms a{
+  text-decoration: none;
+  padding-bottom: 100px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 100px;
+}
+
+.rooms_box{
+  width:80%;
+  margin-bottom: 1%;
+}
+.rooms_box h1{
+  width: 100%;
+}
+.rooms_box .filler-text{
+  width: 40%;
+}
+.room_img{
+  width: 60%;
+}
+.room_img img{
+  width: 100%;
+  border-radius: 20px;
+  border: 5px solid var(--color2);
+  margin-top: 25px;
+
+}
+.rooms_box a:hover{
+  background: var(--color3);
+
+}
+
+.attractions{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.attractions_box{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 50px;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.attractions_box:hover{
+  background: var(--color3);
+}
+
+.attractions_box a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 50px;
+}
+
+.attractions_box img{
+  width: 20vw;
+  height: 15vw;
+  border-radius: 20px;
+  border: 5px solid var(--color2);
+}
+
+.footer_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer_tab{
+  margin: 30px;
+  font-size: 1.3vw;
+  background: var(--color3);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.footer_tab a{
+  text-decoration: none;
+  color: var(--colortext);
+
+}
+.location_index{
+  display: flex;
+  flex-direction: column;
+  background: var(--color3);
+  border-radius: 20px;
+  margin: 30px;
+  padding: 50px;
+}
+.location_title{
+  font-size: 2vw;
+}
+
+.text_class{
+  background: var(--color3);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width:80%;
+}
+.text_class1{
+  background: var(--color3);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.rooms1{
+  display: flex;
+  justify-content: center;
+}
+
+.rooms_box1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: var(--color3);
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 40px
+
+}
+
+
+.text_class3{
+  padding-right: 50px;
+
+}
+
+
+
+.attractions1{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: center;
+
+}
+
+.attractions_box1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 50px;
+  justify-content: center;
+  border-radius: 20px;
+  padding-top: 50px;
+
+}
+
+.attractions_box1{
+  background: var(--color3);
+}
+
+
+.attractions_box1 img{
+  width: 60%;
+  border-radius: 20px;
+  border: 5px solid var(--color2);
+
+}
+
+
+.text_class4{
+  text-align: center;
+}
+
+.about_box{
+  margin: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  background: var(--color3);
+  border-radius: 20px;
+
+}
+.booking{
+  margin: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  background: var(--color3);
+  border-radius: 20px;
+
+}
+.booking_box{
+  padding-right: 100px;
+
+}
+
+.calenders{
+  display: flex;
+  flex-direction: row;
+}
+
+#booking_button{
+  float:right;
+  color: var(--colortext);
+  background: var(--color2);
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid black;
+
+}
+#slideshow { 
+  position: relative; 
+}
+
+#slideshow > div { 
+  position: absolute; 
+  width: 100%;
+  height: 45vw;
+
+}
+
+.map {
+  height: 40vw;
+  width: 100%;
+}
+#hidden{
+  display: none;
+}
+
+#roomdropdown {
+}
+
+.map2{
+  float: right;
+  height: 20vw;
+  width: 30vw;
+}
+
+.references{
+  background: var(--color3);
+  width: 80%;
+  border-radius: 20px;
+  padding-left: 50px;
+  margin-left: 50px;
+}
+
+
+
