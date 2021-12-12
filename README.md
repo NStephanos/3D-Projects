@@ -9,6 +9,9 @@ contains a navagatable fictional resort website entirely in html css and javascr
 # 3D shots
 contains screenshots of personal 3d modeling projects 
 
+# Bridge Shots
+Contains the 3d SPACEGASS work done for a timber foot bridge of span 50m
+
 # other
 I also maintain a legacy translation website
 
